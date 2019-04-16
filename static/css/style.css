@@ -1,0 +1,517 @@
+@font-face {
+	font-family: "galaxy-icon";
+	src: url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2');
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro"), url("../fonts/SourceSansPro-Regular.ttf");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro Semibold"), url("../fonts/SourceSansPro-Semibold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: local("Roboto Mono"), url("../fonts/RobotoMono-Regular.ttf");
+}
+@font-face {
+  font-family: "Dosis";
+  src: local("Dosis Medium"), url("../fonts/Dosis-Medium.ttf");
+  font-weight: 500;
+}
+
+body {
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #34495e;
+	background-color: #fff;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #34495e;
+}
+
+img {
+	border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong {
+	font-weight: 600;
+	color: #2c3e50;
+}
+
+code,
+pre {
+	font-family: "Roboto Mono", Monaco, courier, monospace;
+	font-size: 0.8em;
+	background-color: #f8f8f8;
+	-webkit-font-smoothing: initial;
+	-moz-osx-font-smoothing: initial;
+}
+
+code {
+	color: #e45649;
+	padding: 3px 5px;
+	margin: 0 2px;
+	border-radius: 2px;
+	white-space: nowrap;
+}
+
+em {
+	color: #7f8c8d;
+}
+
+p {
+	word-spacing: 0.05em;
+}
+
+pre {
+  border-radius: 2px;
+  position: relative;
+}
+
+pre code {
+  overflow-x: auto;
+  color: #525252;
+  white-space: pre;
+  padding: 1.2em 1.4em;
+  line-height: 1.5em;
+  font-size: 1em;
+  display: block;
+}
+
+pre code .hljs-tag,
+pre code .hljs-tag pre code .hljs-title,
+pre code .hljs-change,
+pre code .hljs-winutils,
+pre code .hljs-flow,
+pre code .hljs-tex pre code .hljs-special {
+  color: #2973b7;
+}
+
+pre code .hljs-symbol,
+pre code .hljs-symbol pre code .hljs-string,
+pre code .hljs-value,
+pre code .hljs-regexp,
+pre code .hljs-string,
+pre code .hljs-subst,
+pre code .hljs-haskell pre code .hljs-type,
+pre code .hljs-preprocessor,
+pre code .hljs-ruby pre code .hljs-class pre code .hljs-parent,
+pre code .hljs-built_in,
+pre code .hljs-sql pre code .hljs-aggregate,
+pre code .hljs-django pre code .hljs-template_tag,
+pre code .hljs-django pre code .hljs-variable,
+pre code .hljs-smalltalk pre code .hljs-class,
+pre code .hljs-javadoc,
+pre code .hljs-django pre code .hljs-filter pre code .hljs-argument,
+pre code .hljs-smalltalk pre code .hljs-localvars,
+pre code .hljs-smalltalk pre code .hljs-array,
+pre code .hljs-attr_selector,
+pre code .hljs-pseudo,
+pre code .hljs-addition,
+pre code .hljs-stream,
+pre code .hljs-envvar,
+pre code .hljs-apache pre code .hljs-tag,
+pre code .hljs-apache pre code .hljs-cbracket,
+pre code .hljs-tex pre code .hljs-command,
+pre code .hljs-prompt {
+  color: #459ae9;
+}
+
+pre code .hljs-function pre code .hljs-keyword,
+pre code .hljs-constant {
+  color: #0092db;
+}
+
+pre code .hljs-keyword,
+pre code .hljs-attribute {
+	color: #e45649;
+}
+
+pre code .hljs-number,
+pre code .hljs-literal {
+  color: #ae81ff;
+}
+
+pre code .hljs-class pre code .hljs-title {
+  color: #fff;
+}
+
+pre code .hljs-title {
+  color: #a6e22e;
+}
+
+pre code .hljs-tag pre code .hljs-value,
+pre code .hljs-comment,
+pre code .hljs-java pre code .hljs-annotation,
+pre code .hljs-python pre code .hljs-decorator,
+pre code .hljs-template_comment,
+pre code .hljs-pi,
+pre code .hljs-doctype,
+pre code .hljs-deletion,
+pre code .hljs-shebang,
+pre code .hljs-apache pre code .hljs-sqbracket,
+pre code .hljs-tex pre code .hljs-formula {
+  color: #b3b3b3;
+}
+pre code .hljs-coffeescript pre code .hljs-javascript,
+pre code .hljs-javascript pre code .hljs-xml,
+pre code .hljs-tex pre code .hljs-formula,
+pre code .hljs-xml pre code .hljs-javascript,
+pre code .hljs-xml pre code .hljs-vbscript,
+pre code .hljs-xml pre code .hljs-css,
+pre code .hljs-xml pre code .hljs-cdata {
+  opacity: 0.5;
+}
+pre code.hljs.html::before,
+pre code.hljs.js::before,
+pre code.hljs.bash::before,
+pre code.hljs.css::before {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ccc;
+  text-align: right;
+  font-size: 0.9em;
+  padding: 5px 10px 0;
+  line-height: 15px;
+  height: 15px;
+  font-weight: 600;
+}
+pre code.hljs.html::before {
+  content: "HTML";
+}
+pre code.hljs.js::before {
+  content: "JS";
+}
+pre code.hljs.css::before {
+  content: "CSS";
+}
+
+#app {
+	position: relative;
+	padding: 0 60px 30px;
+	z-index: 1;
+	overflow-x: hidden;
+}
+
+.content {
+	position: relative;
+	padding: 2.2em 0;
+	max-width: 600px;
+	margin: 0 auto;
+
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+	margin-top: 24px;
+	margin-bottom: 16px;
+	font-weight: 600;
+	line-height: 1.25;
+}
+
+.content h1 {
+	padding-bottom: .3em;
+	font-size: 2em;
+	border-bottom: 1px solid #ddd;
+}
+
+.content h2 {
+	padding-bottom: .3em;
+	font-size: 1.5em;
+	border-bottom: 1px solid #ddd;
+}
+
+.content h3 {
+	font-size: 1.25em
+}
+
+.content h4 {
+	font-size: 1em;
+}
+
+.content h5 {
+	font-size: .875em
+}
+
+.content h6 {
+	color: #6a737d;
+	font-size: .85em
+}
+
+.content p {
+	position: relative;
+	margin: 1.2em 0;
+	line-height: 1.6em;
+	z-index: 1;
+}
+
+.content a {
+	color: #459ae9;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.content a:hover {
+	text-decoration: underline;
+}
+
+.content strong {
+	font-weight: 600;
+}
+
+.content ol, .content ul {
+	position: relative;
+	margin: 1.2em 0;
+	padding-left: 1.5em;
+	line-height: 1.6em
+}
+
+.content ol li+li, .content ul li+li {
+	margin-top: .25em
+}
+
+.content img {
+	max-width: 100%;
+	height: auto;
+}
+
+.content blockquote {
+	margin: 0;
+	padding: 0 1em;
+	color: #6a737d;
+	border-left: 0.25em solid #dfe2e5;
+}
+
+.content table {
+  display: table;
+  width: 100%;
+	overflow: auto;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.content table th {
+  font-weight: 600;
+}
+
+.content table th,
+.content table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+  text-align: left;
+}
+
+.content table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.content table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+
+@media screen and (max-width: 900px) {
+  body {
+    -webkit-text-size-adjust: none;
+    font-size: 14px;
+  }
+  #header {
+    display: none;
+  }
+  #logo {
+    display: none;
+  }
+  #app {
+    padding: 2em 1.4em 0;
+  }
+  .highlight pre {
+    padding: 1.2em 1em;
+  }
+}
+
+
+/* 字体图标 */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: "galaxy-icon" !important;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.icon-zantong:before {
+  content: "\e644";
+}
+
+.icon-check:before {
+  content: "\e645";
+}
+
+.icon-close:before {
+  content: "\e646";
+}
+
+.icon-edit:before {
+  content: "\e649";
+}
+
+.icon-favorfill:before {
+  content: "\e64b";
+}
+
+.icon-favor:before {
+  content: "\e64c";
+}
+
+.icon-comment:before {
+  content: "\e667";
+}
+
+.icon-likefill:before {
+  content: "\e668";
+}
+
+.icon-like:before {
+  content: "\e669";
+}
+
+.icon-order:before {
+  content: "\e66c";
+}
+
+.icon-more:before {
+  content: "\e684";
+}
+
+.icon-scan:before {
+  content: "\e689";
+}
+
+.icon-settings:before {
+  content: "\e68a";
+}
+
+.icon-pic:before {
+  content: "\e69b";
+}
+
+.icon-top:before {
+  content: "\e69e";
+}
+
+.icon-refresh:before {
+  content: "\e6a4";
+}
+
+.icon-morefill:before {
+  content: "\e6a5";
+}
+
+.icon-qrcode:before {
+  content: "\e6b0";
+}
+
+.icon-delete:before {
+  content: "\e6b4";
+}
+
+.icon-squarecheckfill:before {
+  content: "\e6d4";
+}
+
+.icon-square:before {
+  content: "\e6d5";
+}
+
+.icon-zantongfill:before {
+  content: "\e6e3";
+}
+
+.icon-share:before {
+  content: "\e6f3";
+}
+
+.icon-sort:before {
+  content: "\e700";
+}
+
+.icon-copy:before {
+  content: "\e706";
+}
+
+.icon-focus:before {
+  content: "\e725";
+}
+
+.icon-arrowprev:before {
+  content: "\e698";
+}
+
+.icon-arrowup:before {
+  content: "\e6a7";
+}
+
+.icon-arrowdown:before {
+  content: "\e6a8";
+}
+
+.icon-arrownext:before {
+  content: "\e6a9";
+}
+
+.icon-file:before {
+  content: "\e739";
+}
+
+.icon-show:before {
+  content: "\e73d";
+}
+
+.icon-radio:before {
+  content: "\e75b";
+}
+
+.icon-upload:before {
+  content: "\e75d";
+}
+
+.icon-radiofill:before {
+  content: "\e763";
+}
+
+.icon-add:before {
+  content: "\e767";
+}
+
+.icon-move:before {
+  content: "\e768";
+}
+
+.icon-full:before {
+  content: "\e7bc";
+}
+
+.icon-hide:before {
+  content: "\e6c6";
+}
+
+.icon-back:before {
+  content: "\e603";
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Senior</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="static/img/file_type_html@2x.png" type="image/png">
+  <link rel="stylesheet" href="static/css/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="content">
+
+      <h1>语法糖</h1>
+      <p>尝试 <a>Vue.js</a> 最简单的方法是使用 JSFiddle 上的 Hello World 例子。你可以在 <strong>浏览器</strong>
+        新标签页中打开它，跟着例子学习一些基础用法。或者你也可以创建一个 .html 文件，然后通过如下方式引入 <code>Vue</code></p>
+      <ol>
+        <li>有序列表1 【设置或取消有序列表符的快捷键：Ctrl+Alt+1，可选中多行批量设置序号；支持多光标批量设置列表符，即按Ctrl+鼠标左键添加多光标】</li>
+        <li>有序列表2 【列表后回车会自动补序号】</li>
+        <li>有序列表3 【智能双击：双击前面的数字，可重新对数字排序，修正序号错误，并选中有序列表段落（左边的4是故意写错让你体验的）】</li>
+      </ol>
+      <p>
+        尽管这只是一个刻意设计的例子，但是我们已经设法将应用分割成了两个更小的单元。子单元通过 prop 接口与父单元进行了良好的解耦。我们现在可以进一步改进 <code class="test">
+          <todo-item /></code> 组件，提供更为复杂的模板和逻辑，而不会影响到父单元。
+      </p>
+      <ul>
+        <li>无序列表1 【设置或取消有序列表符的快捷键：Ctrl+Alt+1，可选中多行批量设置序号；支持多光标批量设置列表符，即按Ctrl+鼠标左键添加多光标】</li>
+        <li>无序列表2 【列表后回车会自动补序号】</li>
+        <li>无序列表3 【智能双击：双击前面的数字，可重新对数字排序，修正序号错误，并选中有序列表段落（左边的4是故意写错让你体验的）】</li>
+      </ul>
+
+      <blockquote>
+        <p>
+          引用1
+          引用2
+          快捷键：Ctrl+Alt+Shift+.
+          智能双击：双击&gt;号可选中整段引用列表
+          智能回车：行尾回车或行中Ctrl+Enter强制换行后会自动续列表；连续按回车会清除列表符；在列表符后回车或行尾Shift+回车，上一行留出列表符
+        </p>
+      </blockquote>
+
+      <p>字体图标 <span class="icon-file"></span></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>html</th>
+            <th>css</th>
+            <th>js</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+
+<pre class="hljs"><code class="js">var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  }
+})
+</code></pre>
+
+    </div>
+  </div>
+
+  <script src="static/js/base.js"></script>
+  <script>
+  window.onload = function () {
+    (function() { // 转义 < >
+      let codesElem = document.querySelectorAll('code');
+      codesElem.forEach(function (txt) {
+        if(!hasClass(txt, 'hljs')) {
+          let elem = txt.innerHTML;
+          elem = elem.replace(/</g, '\&lt;')
+          elem = elem.replace(/>/g, '\&gt;')
+          txt.innerHTML = elem
+        }
+      });
+    })();
+
+    (function() {
+      let aLinks = document.querySelectorAll('a');
+      aLinks.forEach(function (txt) {
+        txt.setAttribute('target', '_blank');
+      });
+    })();
+  }
+  </script>
+  <script src="static/js/vue.min.js"></script>
+  <script src="static/js/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <script>
+    new Vue({
+      el: '#app',
+      data() {
+        return {
+          title: 'JavaScript Senior'
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
