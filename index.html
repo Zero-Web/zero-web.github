@@ -13,12 +13,38 @@
 <body>
   <div id="app"> 
     <div id="header_mobile">
-      <a href="javascript:;" class="menu-btn">
+      <a href="javascript:;" class="menu-btn" @click="openSidebar">
         <i class="icon-sort"></i>
       </a>
       <h2>JavaScript Senior</h2>
     </div>
     <div id="header"></div>
+    <div id="sidebar" :class="{'open': open}">
+      <div class="sidebar-wrapper">
+        <div class="search">
+          <form class="search-form">
+            <input type="search" id="search-query-sidebar" class="" autocomplete="off" placeholder="输入关键字">
+          </form>
+        </div>
+        <ul>
+          <li>s12</li>
+          <li>s12</li>
+          <li>s12</li>
+          <li>s12</li>
+          <li>s12</li>
+          <li>s12</li>
+        </ul>
+        <ul>
+          <li>s12</li>
+          <li>s12</li>
+          <li>s12</li>
+          <li>s12</li>
+          <li>s12</li>
+          <li>s12</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mask" v-show="open" @click="closeSidebar"></div>
     <div class="content">
 
       <h1>语法糖</h1>
@@ -76,7 +102,8 @@
 <pre class="hljs"><code class="js">var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue!'
+    message: 'Hello Vue!',
+    author: 'ning heng'
   }
 })
 </code></pre>
@@ -84,7 +111,6 @@
     </div>
   </div>
 
-  <script src="test.js"></script>
   <script src="static/js/base.js"></script>
   <script>
   window.onload = function () {
@@ -118,9 +144,18 @@
       el: '#app',
       data() {
         return {
-          title: 'JavaScript Senior'
+          title: 'JavaScript Senior',
+          open: !1,
         }
-      }
+      },
+      methods: {
+        openSidebar() {
+          this.open = !0
+        },
+        closeSidebar() {
+          this.open = !1
+        }
+      },
     })
   </script>
 </body>
